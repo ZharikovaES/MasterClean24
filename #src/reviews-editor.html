@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    
+    <title>Отзывы</title>
+</head>
+<body>
+    @@include('_header.html')
+    <main>
+        <section class="reviews-editor">
+            <div class="container">
+                <h1 class="reviews-editor__title title">Отзывы</h1>
+                <p class="reviews-editor__desc">Оставьте отзыв о нашей компании, благодаря вашим отзывам наш сервис становится  лучше! Спасибо</p>
+            </div>
+        </section>
+        @@include('_reviews-form.html')
+        @@include('_reviews-content-all.html')
+    </main>
+    @@include('_footer.html')
+    <script src="js/all.min.js"></script>
+    <script src="js/header.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

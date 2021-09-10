@@ -1,0 +1,40 @@
+.catalog {
+    &__breadcrumb {
+        padding: 40px 0;
+        @media (max-width: 1000px){
+            padding: 20px 0;
+        }    
+    }
+    &__title {
+        text-align: center;
+        @include adaptiv-font(30, 24, 1);
+        padding-bottom: 20px;
+
+        @media (max-width: 1000px){
+            padding-bottom: 10px;
+        }    
+    
+    }
+    &__desc {
+        text-align: center;
+        padding-bottom: 60px;
+        @include adaptiv-font(20, 18, 1);
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: $black;
+        @media (max-width: 1150px){
+            padding-bottom: 50px;
+        }
+        @media (max-width: 1000px){
+            padding-bottom: 30px;
+        }    
+        @media (max-width: 750px){
+            padding-bottom: 15px;
+        }    
+    }
+}
+@import "calculator";
+@import "description";
+@import "advantages";
+@import "frequently-asked-questions";
+@import "reviews-content";

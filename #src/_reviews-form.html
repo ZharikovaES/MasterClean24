@@ -1,0 +1,38 @@
+<section class="reviews-form">
+    <div class="container">
+        <form action="" class="reviews-form__form form-reviews">
+            <div class="form-reviews__rating rating-form-reviews">
+                <label class="rating-form-reviews__label star-valid">Поставьте оценку </label>
+                <div class="rating-form-reviews__wrapper rating-area">
+                    <input type="radio" id="star-5" name="rating" value="5" required>
+                    <label for="star-5"></label>
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4"></label>
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3"></label>
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2"></label>
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1"></label>
+                </div>
+            </div>
+            <div class="form-reviews__row">
+                <div class="form-reviews__box">
+                    <label for="username" class="form-reviews__box-label star-valid">Ваше имя</label>
+                    <input type="text" id="username" name="username" class="form-reviews__box-input" placeholder="Кирилл" required>
+                </div>
+                <div class="form-reviews__box">
+                    <label for="phone" class="form-reviews__box-label star-valid">Телефон</label>
+                    <input type="tel" id="phone" name="phone" class="form-reviews__box-input" placeholder="+7" required>
+                </div>
+            </div>
+            <div class="form-reviews__comment comment-form-reviews">
+                <label for="comment" class="comment-form-reviews__label star-valid">Отзыв</label>
+                <div class="comment-form-reviews__inner">
+                    <textarea name="comment" id="comment" class="comment-form-reviews__input" placeholder="Напишите здесь свой отзыв" required></textarea>
+                    <button type="submit" class="comment-form-reviews__btn btn-green">Опубликовать</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

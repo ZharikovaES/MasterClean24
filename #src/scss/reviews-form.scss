@@ -1,0 +1,202 @@
+.reviews-form {
+    margin-bottom: 60px;
+    @media (max-width: 1150px){
+        margin-bottom: 40px;
+    }
+    @media (max-width: 1000px){
+        margin-bottom: 20px;
+    }    
+    &__form {
+        margin-left: 8%;
+        margin-right: 8%;
+        @media (max-width: 900px){
+            margin-left: 2%;
+            margin-right: 2%;
+        }    
+        @media (max-width: 600px){
+            margin-left: 0;
+            margin-right: 0;
+        }    
+        @media (max-width: 450px){
+            margin-left: -5px;
+            margin-right: -5px;
+        }            
+    }
+}
+.form-reviews {
+    &__rating {
+        margin-bottom: 40px;
+        @media (max-width: 1150px){
+            margin-bottom: 30px;
+        }    
+        @media (max-width: 1000px){
+            margin-bottom: 20px;
+        }    
+        @media (max-width: 600px){
+            margin-bottom: 15px;
+        }    
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        @media (max-width: 1000px){
+            margin-bottom: 15px;
+        }
+        @media (max-width: 600px){
+            flex-wrap: wrap;
+        }        
+    }
+    &__box {
+        flex: 0 1 45%;
+        @media (max-width: 900px){
+            flex: 0 1 48%;
+        }    
+        @media (max-width: 600px){
+            flex: 0 1 100%;
+        }  
+        &+&{
+            @media (max-width: 600px){
+                margin-top: 15px;
+            }  
+        }  
+    }
+    &__box-label {
+        @include adaptiv-font(24, 20, 1);
+        line-height: 1.4;
+        color: $black;
+        margin-bottom: 20px;
+        @media (max-width: 1000px){
+            margin-bottom: 10px;
+        }    
+    }
+    &__box-input {
+        display: inline-block;
+        width: 100%;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 15px 20px;
+
+        &, &::placeholder{
+            font-size: 18px;
+            line-height: 1.4;
+            color: $black;
+        }
+
+        &:invalid{
+            background-color: rgba(#ffa3a39c, 0.6);
+            color: $white;
+            &::placeholder{
+                color: $white;
+            }    
+        }
+
+        &:not(:focus):invalid {
+            background-color: $white;
+            color: $black;
+            &::placeholder{
+                color: $black;
+            }    
+        }
+
+        @media (max-width: 1000px){
+            padding: 10px 15px;
+        }    
+    }
+    &__comment {}
+}
+.rating-form-reviews {
+    &__label {
+        @include adaptiv-font(24, 20, 1);
+        line-height: 1.4;
+        color: $black;
+        margin-bottom: 20px;
+        @media (max-width: 1000px){
+            margin-bottom: 10px;
+        }    
+    }
+    &__wrapper {
+        @media (max-width: 600px){
+            margin-left: auto;
+            margin-right: auto;
+        }    
+    }
+}
+.comment-form-reviews {
+    &__label {
+        @include adaptiv-font(24, 20, 1);
+        line-height: 1.4;
+        color: $black;
+        margin-bottom: 20px;
+        @media (max-width: 1000px){
+            margin-bottom: 10px;
+        }    
+    }
+    &__inner {
+        background-color: $white;
+        border-radius: 10px;
+        padding: 30px;
+        text-align: right;
+        @media (max-width: 1000px){
+            padding: 15px;
+        }    
+        @media (max-width: 600px){
+            text-align: center;
+        }    
+    }
+    &__input {
+        resize: none;
+        width: 100%;
+        height: 150px;
+        background: $white;
+        border: 1px solid $grey1;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        padding: 20px 45px;
+
+        &, &::placeholder{
+            font-size: 18px;
+            line-height: 1.4;
+            color: $grey1;
+            font-family: 'Ubuntu', sans-serif;
+            transition: all .3s;
+        }
+
+        &:invalid{
+            background-color: rgba(#ffa3a39c, 0.6);
+            border: 1px solid $grey2;
+            color: $white;
+            &::placeholder{
+                color: $white;
+            }    
+        }
+
+        &:not(:focus):invalid {
+            background-color: $white;
+            border: 1px solid $grey1;
+            color: $grey1;
+            &::placeholder{
+                color: $grey1;
+            }    
+        }
+
+        @media (max-width: 1000px){
+            margin-bottom: 10px;
+            padding: 15px 25px;
+        }    
+        @media (max-width: 500px){
+            padding: 10px 15px;
+        }    
+    }
+    &__btn {
+        border-radius: 10px;
+        padding: 9px 44px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.4;
+        @media (max-width: 600px){
+            width: 100%;
+        }    
+    }
+}

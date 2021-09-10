@@ -1,0 +1,38 @@
+.reviews-editor {
+    padding-top: 60px;
+    margin-bottom: 60px;
+    @media (max-width: 1150px){
+        padding-top: 40px;
+        margin-bottom: 40px;
+    }
+    @media (max-width: 1000px){
+        padding-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }    
+    @media (max-width: 600px){
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+    }    
+    &__title {
+        @include adaptiv-font(30, 20, 1);
+        text-align: center;
+        padding-bottom: 30px;
+        @media (max-width: 1150px){
+            padding-bottom: 20px;
+        }    
+        @media (max-width: 1000px){
+            padding-bottom: 15px;
+        }        
+    }
+    &__desc {
+        width: 100%;
+        border-bottom: 1px solid $blue1;
+        padding-bottom: 20px;
+        @include adaptiv-font(20, 18, 1);
+        line-height: 1.4;
+        @media (max-width: 1000px){
+            padding-bottom: 10px;
+        }        
+    }
+}

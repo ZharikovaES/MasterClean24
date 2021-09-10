@@ -1,0 +1,129 @@
+.list-reviews {
+    &__item {
+        &+&{
+            padding-top: 20px;
+            margin-top: 15px;
+            border-top: 1px solid #EEEEEE;
+        }
+    }
+}
+.review {
+    &__wrapper {}
+    &__head {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        @media(max-width: 1150px) {
+            margin-bottom: 7px;
+        }
+        @media(max-width: 767px) {
+            margin-bottom: 20px;
+        }
+        @media(max-width: 479px) {
+            margin-bottom: 7px;
+        }
+    }
+    &__body {}
+    &__answer {
+        padding: 20px 0 0 40px;
+        @media(max-width: 1150px) {
+            padding: 10px 0 0 30px;
+        }
+        @media(max-width: 767px) {
+            padding: 20px 0 0 30px;
+        }
+        @media(max-width: 479px) {
+            padding: 15px 0 0 0;
+        }
+    }
+}
+.head-review {
+    &__avatar {
+        flex: 0 0 50px;
+        height: 50px;
+    }
+    &__info {
+        flex: 1 1 auto;
+        margin-left: 20px;
+    }
+}
+.avatar-head-review {
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+
+    img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 100%;
+        max-height: 100%;
+    }
+}
+.info-head-review {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 479px) {
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        @media(max-width: 479px) {
+            flex: 0 1 100%;
+            margin-bottom: 10px;
+        }    
+    }
+    &__date {
+        font-weight: 500;
+        @include adaptiv-font(18, 15, 1);
+        line-height: 1.4;
+        color: #999999;
+    }
+}
+.content-info-head-review {
+    &__username {
+        font-weight: 500;
+        @include adaptiv-font(20, 18, 1);
+        line-height: 1.4;
+        display: inline-block;
+        padding-bottom: 7px;
+    }
+    &__rating {}
+}
+.rating-content-head-review {
+    display: flex;
+    &__star {
+        display: block;
+        width: 16px;
+        height: 15px;
+        background-image: url('../images/icons/star-icon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        &+&{
+            margin-left: 1px;
+        }
+    }
+}
+.body-review {
+    &__text {
+        @include adaptiv-font(18, 15, 1);
+        line-height: 1.4;
+    }
+}
+.answer-review {
+    &__username {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.4;
+        padding-bottom: 10px;
+    }
+    &__text {
+        @include adaptiv-font(18, 15, 1);
+        line-height: 1.4;
+    }
+}
